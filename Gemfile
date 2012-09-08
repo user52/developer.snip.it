@@ -13,6 +13,7 @@ gem 'stringex'
 gem 'awesome_print'
 gem 'json'
 gem 'httparty'
+gem 'hashdiff'
 
 group :development do
   gem 'adsf'

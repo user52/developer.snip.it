@@ -12,6 +12,7 @@ GEM
       colored (>= 1.2)
     ffi (1.0.11)
     fssm (0.2.9)
+    hashdiff (0.0.5)
     httparty (0.9.0)
       multi_json (~> 1.0)
       multi_xml
@@ -42,6 +43,7 @@ DEPENDENCIES
   builder
   coderay
   fssm
+  hashdiff
   httparty
   json
   kramdown (~> 0.13.2)
