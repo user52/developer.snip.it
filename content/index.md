@@ -4,7 +4,7 @@ title: Snip.It API
 
 # The Snip.It API
 
-The Snip.It API offers up the resources that make up the SnipI.It service. 
+The Snip.It API offers up the resources that make up the Snip.It service. 
 
 Please see the API Changelog for the latest changes and updates to the API.
 

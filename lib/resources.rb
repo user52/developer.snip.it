@@ -360,8 +360,158 @@ module GitHub
     "url_slug"               => "jouhan",
     "username"               => "jouhan",
     "views_count"            => 8153
-}
+  }
 
+  MY_FOLDERS = 
+  {
+    "folders" => [
+      {
+        "id"       => 16289,
+        "title"    => "Alcohol Science",
+        "url_slug" => "16289-Alcohol-Science"
+      },
+      {
+        "id"       => 16136,
+        "title"    => "Bike Commuting 101",
+        "url_slug" => "16136-Bike-Commuting-101"
+      },
+      {
+        "id"       => 16396,
+        "title"    => "Brain Health",
+        "url_slug" => "16396-Brain-Health"
+      },
+      {
+        "id"       => 15965,
+        "title"    => "Celebrity Gossip",
+        "url_slug" => "15965-Celebrity-Gossip"
+      },
+      {
+        "id"       => 16327,
+        "title"    => "Climbing",
+        "url_slug" => "16327-Climbing"
+      },
+      {
+        "id"       => 14714,
+        "title"    => "Coffee",
+        "url_slug" => "14714-Coffee"
+      },
+      {
+        "id"       => 11444,
+        "title"    => "Cute Food",
+        "url_slug" => "11444-Cute-Food"
+      },
+      {
+        "id"       => 25564,
+        "title"    => "Documentaries",
+        "url_slug" => "25564-Documentaries"
+      },
+      {
+        "id"       => 15163,
+        "title"    => "Exercise",
+        "url_slug" => "15163-Exercise"
+      },
+      {
+        "id"       => 14807,
+        "title"    => "Fashion",
+        "url_slug" => "14807-Fashion"
+      },
+      {
+        "id"       => 13278,
+        "title"    => "Funny",
+        "url_slug" => "13278-Funny"
+      },
+      {
+        "id"       => 14286,
+        "title"    => "Half-Baked San Francisco News",
+        "url_slug" => "14286-Half-Baked-San-Francisco-News"
+      },
+      {
+        "id"       => 22577,
+        "title"    => "Jouhan's Ego",
+        "url_slug" => "22577-Jouhans-Ego"
+      },
+      {
+        "id"       => 16269,
+        "title"    => "Life Hacks",
+        "url_slug" => "16269-Life-Hacks"
+      },
+      {
+        "id"       => 19281,
+        "title"    => "Muni Love",
+        "url_slug" => "19281-Muni-Love"
+      },
+      {
+        "id"       => 11443,
+        "title"    => "Physical Feats",
+        "url_slug" => "11443-Physical-Feats"
+      },
+      {
+        "id"       => 16863,
+        "title"    => "Pinterest, the Internet Drag Queen",
+        "url_slug" => "16863-Pinterest-the-Internet-Drag-Queen"
+      },
+      {
+        "id"       => 28291,
+        "title"    => "Pop Stand",
+        "url_slug" => "28291-Pop-Stand"
+      },
+      {
+        "id"       => 16173,
+        "title"    => "Programming Reads",
+        "url_slug" => "16173-Programming-Reads"
+      },
+      {
+        "id"       => 14531,
+        "title"    => "Random Goodness",
+        "url_slug" => "14531-Random-Goodness"
+      },
+      {
+        "id"       => 16008,
+        "title"    => "Simple Health",
+        "url_slug" => "16008-Simple-Health"
+      },
+      {
+        "id"       => 17148,
+        "title"    => "Snip.it Mentions",
+        "url_slug" => "17148-Snipit-Mentions"
+      },
+      {
+        "id"       => 18410,
+        "title"    => "Standing Desks and Hacks",
+        "url_slug" => "18410-Standing-Desks-and-Hacks"
+      },
+      {
+        "id"       => 12646,
+        "title"    => "Taylor Swift",
+        "url_slug" => "12646-Taylor-Swift"
+      },
+      {
+        "id"       => 19428,
+        "title"    => "Tech",
+        "url_slug" => "19428-Tech"
+      },
+      {
+        "id"       => 14098,
+        "title"    => "The Gaga Inspired",
+        "url_slug" => "14098-The-Gaga-Inspired"
+      },
+      {
+        "id"       => 26200,
+        "title"    => "UI and UX Reads",
+        "url_slug" => "26200-UI-and-UX-Reads"
+      },
+      {
+        "id"       => 15971,
+        "title"    => "Upcycled Crafts",
+        "url_slug" => "15971-Upcycled-Crafts"
+      },
+      {
+        "id"       => 15738,
+        "title"    => "Workspace",
+        "url_slug" => "15738-Workspace"
+      }
+    ]
+  }
 
   end
 end
