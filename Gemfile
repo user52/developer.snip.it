@@ -10,6 +10,10 @@ gem 'mime-types', '~> 1.16'
 gem 'coderay'
 gem 'builder'
 gem 'stringex'
+gem 'awesome_print'
+gem 'json'
+gem 'httparty'
+gem 'hashdiff'
 
 group :development do
   gem 'adsf'

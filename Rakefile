@@ -1,5 +1,6 @@
 require 'nanoc3/tasks'
 require 'stringex'
+require 'lib/api_tester'
 
 content_dir			= "content"	# source directory
 new_endpoint_ext	= "md" 		# default extension for new endpoint docs
