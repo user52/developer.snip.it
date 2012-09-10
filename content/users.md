@@ -21,5 +21,5 @@ title: Users
 ### Response
 
 <%= headers 200 %>
-<%= json :user_auth %>
+<%= json :user_me %>
 

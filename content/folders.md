@@ -12,7 +12,7 @@ This retrieves the collections for a user
 
     [GET] /users/:user/folders
 
-While the following retrieve the same for an authenticated user
+While the following retrieves the same for an authenticated user
 
     [GET] /users/my_folders
 
@@ -23,4 +23,33 @@ While the following retrieve the same for an authenticated user
 <%= json :my_folders %>
 
 ## Retrieving a specific folder
+
+	[GET] /folders/:folder
+
+### Response
+
+<%= headers 200 %>
+<%= json :folder %>
+
+## Subscribing to a folder
+
+	[POST] /folders/:folder/subscription
+
+### Response
+
+## Unsubscribing from a folder
+
+	[DELETE] /folders/:folder/subscription
+
+### Response
+
+
+## Retrieving the subscribers to a folder
+
+	[GET] /folders/:folder/subscribers
+
+### Response
+
+<%= headers 200 %>
+<%= json :folder_subscribers %>
 

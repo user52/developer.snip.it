@@ -31,9 +31,9 @@ task :create_endpoint, :title do |t, args|
 end
 
 desc "Pull an api method"
-task :fetch do
-	url = ARGV[1]
-	token = ARGV[2]
+task :fetch, :url do |t, args|
+	url = args.url
+	token = ENV['SNIPIT_TOKEN']
 	unauthed = HTTParty.get(url)
 	p "URL Response: #{unauthed.code}"
 	ap JSON.parse(unauthed.body), :indent => -2, :plain => true, :index => false, :sort_keys => true
