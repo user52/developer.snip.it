@@ -16,7 +16,7 @@ We strive to make the API fast, consistent and bug-free. If you find otherwise, 
 
 ## Authentication
 
-Most of the resource in the API provide access to information that is non-private. If a resource is completely private a request will return a *Unauthrized* response
+Most of the resource in the API provide access to information that is non-private. If a resource is completely private a request will return a *Unauthorized* response
 
 <%= headers 401 %>
 

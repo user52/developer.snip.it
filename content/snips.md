@@ -52,6 +52,39 @@ originated_by
 	:originated_by => "resnip" \
 %>
 
+### Response
+
+<%= headers 200 %>
+
+
+## Update a snip
+
+Updates a snip for the authenticated user
+
+	[PATCH] /snips/:snip
+
+### Input
+
+title
+: _Optional_ **string** – New title for snip
+
+caption
+: _Optional_ **string** – New caption for snip
+
+img_url
+: _Optional_ **string** – New image URL for snip
+
+<%= json \
+	:title => "Text-Driven Coffee Machine Gives New Meaning to 'Instant Coffee'", \
+	:caption => "I wouldn't mind a \"textpresso\" machine hanging around the office ;)", \
+	:img_url => "http://d2fkwnqkeasf43.cloudfront.net/77221e94ee907c9e447f248cce4b87964116b1403bc19a8a5e7b0d84af8c31d3-500x319.jpg"
+%>
+
+### Response
+
+<%= headers 200 %>
+
+
 ## Favorite a snip
 
 	[POST] /snips/:snip/favorite

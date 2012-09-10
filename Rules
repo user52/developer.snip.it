@@ -14,6 +14,7 @@
 #   because “*” matches zero or more characters.
 
 compile '/static/*' do
+  filter :relativize_paths, :type => :css
 end
 
 compile '*' do
@@ -22,7 +23,9 @@ compile '*' do
   filter :colorize_syntax,
     :colorizers => {:javascript => :pygmentsrb}
   layout 'default'
+  filter :relativize_paths, :type => :html
 end
+
 
 route '/static/css/*' do
   item.identifier[7..-2] + '.css'

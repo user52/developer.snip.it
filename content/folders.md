@@ -37,11 +37,16 @@ While the following retrieves the same for an authenticated user
 
 ### Response
 
+<%= headers 200 %>
+
+
 ## Unsubscribing from a folder
 
 	[DELETE] /folders/:folder/subscription
 
 ### Response
+
+<%= headers 200 %>
 
 
 ## Retrieving the subscribers to a folder

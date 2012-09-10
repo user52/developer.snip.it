@@ -58,7 +58,7 @@ data_sources:
     # it will become “/about.html/” instead.
     allow_periods_in_identifiers: false
 
-base_url: http://developer.snip.it
+base_url: http://snipit.github.com/developer.snip.it
 
 # Configuration for the “watch” command, which watches a site for changes and
 # recompiles if necessary.
