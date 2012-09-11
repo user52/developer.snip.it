@@ -48,7 +48,6 @@ While the following retrieves the same for an authenticated user
 
 <%= headers 200 %>
 
-
 ## Retrieving the subscribers to a folder
 
 	[GET] /folders/:folder/subscribers
@@ -57,4 +56,13 @@ While the following retrieves the same for an authenticated user
 
 <%= headers 200 %>
 <%= json :folder_subscribers %>
+
+## Deleting a folder
+
+	[DELETE] /folders/:folder
+
+### Response
+
+<%= headers 200 %>
+<%= json :folder_delete %>
 

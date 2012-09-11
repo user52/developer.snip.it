@@ -307,6 +307,165 @@ module GitHub
     ]
   }
 
+  FOLDER_DELETE = 
+  {
+    "result" => "OK"
+  }
+  
+  POST_CREATE = 
+  {
+    "folder" => {
+      "category_id"          => nil,
+      "color"                => nil,
+      "contest_submitted_at" => nil,
+      "created_at"           => "2012-09-11T00:57:55Z",
+      "deleted_at"           => nil,
+      "description"          => nil,
+      "do_not_feature"       => nil,
+      "favorites_count"      => 0,
+      "featured"             => 0,
+      "featured_post_id"     => nil,
+      "fix_image"            => nil,
+      "group_id"             => nil,
+      "hashtag"              => nil,
+      "highlighted"          => false,
+      "id"                   => 28933,
+      "img_url"              => "http://media.nbcbayarea.com/images/654*417/textspresso-thumb-550xauto-88130.jpg",
+      "last_snipped_at"      => "2012-09-11T00:57:55Z",
+      "layout"               => nil,
+      "listorder"            => nil,
+      "posts_count"          => 0,
+      "private"              => false,
+      "slug"                 => "caffeinenation",
+      "subscriptions_count"  => 0,
+      "title"                => "Caffeine-Nation",
+      "updated_at"           => "2012-09-11T00:57:55Z",
+      "user_id"              => 17798,
+      "views"                => 0
+    },
+    "post"   => {
+      "alpha_snip_id"          => nil,
+      "cached_image_at"        => nil,
+      "cached_image_error"     => nil,
+      "cached_image_uri"       => nil,
+      "cached_image_uri_small" => nil,
+      "caption"                => "I wouldn't mind a \"textpresso\" machine hanging around the office ;)",
+      "comments_count"         => 0,
+      "created_at"             => "2012-09-11T00:57:55Z",
+      "deleted_at"             => nil,
+      "description"            => nil,
+      "favorites_count"        => 0,
+      "fb_post_id"             => nil,
+      "folder_category_id"     => nil,
+      "folder_featured"        => 0,
+      "folder_id"              => 28933,
+      "folder_title"           => "Caffeine-Nation",
+      "hashtag"                => nil,
+      "id"                     => 286166,
+      "img_height"             => nil,
+      "img_url"                => "http://media.nbcbayarea.com/images/654*417/textspresso-thumb-550xauto-88130.jpg",
+      "img_width"              => nil,
+      "keywords"               => nil,
+      "notification_sent"      => false,
+      "order"                  => nil,
+      "originated_by"          => "resnip",
+      "resnipped_from_id"      => nil,
+      "shared_with"            => 0,
+      "source_domain"          => "www.nbcbayarea.com",
+      "title"                  => "Text-Driven Coffee Machine Gives New Meaning to 'Instant Coffee'",
+      "topic"                  => nil,
+      "twitter_status_id"      => nil,
+      "updated_at"             => "2012-09-11T00:57:55Z",
+      "url"                    => {
+        "domain"    => "www.nbcbayarea.com",
+        "targeturl" => "http://www.nbcbayarea.com/news/local/Text-Driven-Coffee-Machine-Gives-New-Meaning-to-Instant-Coffee-146440315.html"
+      },
+      "user_id"                => 17798,
+      "user_name"              => "Marc Nijdam",
+      "user_smallimage"        => "https://graph.facebook.com/731214555/picture?type=square",
+      "views"                  => 0
+    }
+  }
+
+  POST_UPDATE = 
+  {
+    "alpha_post_id"   => nil,
+    "caption"         => "I wouldn't mind a \"textpresso\" machine hanging around the office ;)",
+    "comments"        => [],
+    "comments_count"  => 0,
+    "created_at"      => "2012-09-11T00:57:55Z",
+    "description"     => nil,
+    "display_type"    => "fattie",
+    "domain"          => "www.nbcbayarea.com",
+    "favorites_count" => 0,
+    "folder_id"       => 28933,
+    "id"              => 286166,
+    "image"           => {
+      "height" => 319,
+      "url"    => "//d2fkwnqkeasf43.cloudfront.net/1c975ff34de763f67a60a1e38aa1e4ef58f7ab9e-500x319.jpg",
+      "width"  => 500
+    },
+    "source"          => "nbcbayarea",
+    "title"           => "Text-Driven Coffee Machine Gives New Meaning to 'Instant Coffee'",
+    "type"            => "url",
+    "updated_at"      => "2012-09-11T00:58:06Z",
+    "url"             => "http://www.nbcbayarea.com/news/local/Text-Driven-Coffee-Machine-Gives-New-Meaning-to-Instant-Coffee-146440315.html",
+    "user_id"         => 17798
+  }
+
+  POST_FAVORITE = 
+  {
+    "favorited" => true
+  }
+
+  POST_UNFAVORITE = 
+  {
+    "favorited" => false
+  }
+
+  POST_RESNIP = 
+  {
+    "post" => {
+      "alpha_post_id"   => 286166,
+      "caption"         => "I wouldn't mind a \"textpresso\" machine hanging around the office ;)",
+      "comments"        => [],
+      "comments_count"  => 0,
+      "created_at"      => "2012-09-11T01:22:10Z",
+      "description"     => nil,
+      "display_type"    => "fattie",
+      "domain"          => "www.nbcbayarea.com",
+      "favorites_count" => 0,
+      "folder_id"       => 28933,
+      "folder_slug"     => "caffeinenation",
+      "folder_title"    => "Caffeine-Nation",
+      "folder_url_slug" => "28933-Caffeine-Nation",
+      "id"              => 286186,
+      "image"           => {
+        "height" => 319,
+        "url"    => "//d2fkwnqkeasf43.cloudfront.net/1c975ff34de763f67a60a1e38aa1e4ef58f7ab9e-500x319.jpg",
+        "width"  => 500
+      },
+      "source"          => "nbcbayarea",
+      "title"           => "Text-Driven Coffee Machine Gives New Meaning to 'Instant Coffee'",
+      "type"            => "url",
+      "updated_at"      => "2012-09-11T01:22:10Z",
+      "url"             => "http://www.nbcbayarea.com/news/local/Text-Driven-Coffee-Machine-Gives-New-Meaning-to-Instant-Coffee-146440315.html",
+      "user"            => {
+        "id"              => 17798,
+        "name"            => "Marc Nijdam",
+        "small_image_url" => "https://graph.facebook.com/731214555/picture?type=square",
+        "updated_at"      => "2012-09-11T00:57:55Z",
+        "url_slug"        => "men"
+      },
+      "user_id"         => 17798
+    }
+  }
+
+  POST_DELETE = 
+  {
+    "result" => "OK"
+  }
+
   POST_COMMENTS = 
   {
     "comments" => [
