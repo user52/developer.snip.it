@@ -13,6 +13,15 @@ title: Snips
 <%= headers 200 %>
 <%= json :folder_snips %>
 
+## Retrieving a snip
+
+	[GET] /snips/:snip
+
+### Response
+
+<%= headers 200 %>
+<%= json :post %>
+
 ## Creating a snip
 
 Creates a new snip for the authenticated user

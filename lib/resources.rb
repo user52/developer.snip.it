@@ -311,6 +311,42 @@ module GitHub
   {
     "result" => "OK"
   }
+
+  POST = 
+  {
+    "alpha_post_id"   => nil,
+    "caption"         => "I wouldn't mind a \"textpresso\" machine hanging around the office ;)",
+    "comments"        => [],
+    "comments_count"  => 0,
+    "created_at"      => "2012-04-06T22:24:20Z",
+    "description"     => "The coffee break is an inalienable right for every office worker. The problem is, between meetings and endless emails, it can be pretty hard to squeeze one in. Thanks to a new invention called the \"Textspresso\" we can shave off a few valuable minutes by texting our order to the coffee machine and simply do a drive by the break room to pick it up when ready.",
+    "display_type"    => "highrise",
+    "domain"          => "www.nbcbayarea.com",
+    "favorites_count" => 0,
+    "folder_id"       => 15738,
+    "folder_slug"     => "workspace",
+    "folder_title"    => "Workspace",
+    "folder_url_slug" => "15738-Workspace",
+    "id"              => 123416,
+    "image"           => {
+      "height" => 319,
+      "url"    => "//d2fkwnqkeasf43.cloudfront.net/77221e94ee907c9e447f248cce4b87964116b1403bc19a8a5e7b0d84af8c31d3-500x319.jpg",
+      "width"  => 500
+    },
+    "source"          => "nbcbayarea",
+    "title"           => "Text-Driven Coffee Machine Gives New Meaning to 'Instant Coffee'",
+    "type"            => "url",
+    "updated_at"      => "2012-06-30T01:42:50Z",
+    "url"             => "http://www.nbcbayarea.com/news/local/Text-Driven-Coffee-Machine-Gives-New-Meaning-to-Instant-Coffee-146440315.html",
+    "user"            => {
+      "id"              => 2870,
+      "name"            => "Jouhan Allende",
+      "small_image_url" => "//avatars-snip-it.s3.amazonaws.com/69/a276c4f4b5cf86a2462b70df56f5e3/jouhan-mustache.jpg",
+      "updated_at"      => "2012-09-11T22:01:17Z",
+      "url_slug"        => "jouhan"
+    },
+    "user_id"         => 2870
+  }
   
   POST_CREATE = 
   {
