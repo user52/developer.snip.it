@@ -40,13 +40,13 @@ folder
 : _Optional_ **string** – JSON representation of the new folder this snip will be asssigned to. Note that `folder_id` overrides this parameter
 
 originated_by
-: _Optional_ **string** – Representation of what application created this new snip. 
+: _Optional_ **string** – Representation of the application or tool that created this new snip. 
 
 <%= json \
 	:title => "Text-Driven Coffee Machine Gives New Meaning to 'Instant Coffee'", \
 	:caption => "I wouldn't mind a \"textpresso\" machine hanging around the office ;)", \
 	:url => "http://www.nbcbayarea.com/news/local/Text-Driven-Coffee-Machine-Gives-New-Meaning-to-Instant-Coffee-146440315.html", \
-	:img_url => "http://d2fkwnqkeasf43.cloudfront.net/77221e94ee907c9e447f248cce4b87964116b1403bc19a8a5e7b0d84af8c31d3-500x319.jpg", \
+	:img_url => "http://media.nbcbayarea.com/images/654*417/textspresso-thumb-550xauto-88130.jpg", \
 	:folder_id => 15738, \
 	:folder => "{ title : \"Caffeine-Nation\"}", \
 	:originated_by => "resnip" \
@@ -61,7 +61,7 @@ originated_by
 
 Updates a snip for the authenticated user
 
-	[PATCH] /snips/:snip
+	[PUT] /snips/:snip
 
 ### Input
 
