@@ -7,10 +7,10 @@ html {
 }
 
 body {
-  font: 13px helvetica,arial,freesans,clean,sans-serif;
+  font: 13px arial,helvetica,freesans,clean,sans-serif;
   line-height: 1.4em;
   background-color: #fff;
-  color: #393939;
+  color: #333333;
   margin: 0px;
   padding: 0px;
   height: 100%;
@@ -22,9 +22,8 @@ p {
 
 h1 {
   font-size: 20px;
-  border-bottom: 1px solid #cccccc;
-  padding: .5em 0;
-  margin: 2em 0 1em;
+  padding: .8em 0 0;
+  margin: 2em 0 0;
 }
 
 h1:first-child {
@@ -70,13 +69,14 @@ h6 {
 }
 
 a {
-  color: #4183C4;
+  color: #209ddf;
   text-decoration: none;
 }
 
 a:hover,
 a:active {
-  text-decoration:underline;
+  text-decoration:none;
+  color:#39b7e7;
 }
 
 blockquote {
@@ -907,7 +907,7 @@ div.expandable > ul h3 > a:hover {
 
 div.expandable > ul h3 > a.collapsed,
 div.expandable > ul h3 > a.expanded {
-  background-image: url(/shared/images/expand-arrows.png);
+  background-image: url(../shared/images/expand-arrows.png);
   background-position: 0px -3px;
   background-repeat: no-repeat;
   width: 13px;
@@ -920,7 +920,7 @@ div.expandable > ul h3 > a.expanded {
 }
 
 div.expandable > ul h3 > a.collapsed:hover {
-  background-image: url(/shared/images/expand-arrows.png);
+  background-image: url(../shared/images/expand-arrows.png);
   background-position: 0px -43px;
   background-repeat: no-repeat;
   width: 13px;
