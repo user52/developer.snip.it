@@ -7,6 +7,8 @@ require 'ap'
 
 content_dir			= "content"	# source directory
 new_endpoint_ext	= "md" 		# default extension for new endpoint docs
+deploy_dir			= "output" 	# directory to deploy from
+deploy_branch		= "gh_pages" # target branch to deploy to (Github-Pages)
 
 desc "Compile the site"
 task :compile do
@@ -16,6 +18,20 @@ end
 desc "Auto compile the site"
 task :autocompile do
   `bundle exec nanoc autocompile`
+end
+
+desc "Deploy the site to gh-pages"
+task :deploy do
+	cd "#{deploy_dir}" do
+	  system "git add ."
+	  system "git add -u"
+	  puts "\n## Commiting: Site updated at #{Time.now.utc}"
+	  message = "Site updated at #{Time.now.utc}"
+	  system "git commit -m \"#{message}\""
+	  puts "\n## Pushing generated #{deploy_dir} website"
+	  system "git push origin --force"
+	  puts "\n## Github Pages deploy complete"
+	end
 end
 
 desc "Create new API endpoint"
