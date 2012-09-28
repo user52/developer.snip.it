@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Snip.It API - Snips</title>
+<link href="../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../css/documentation.css" rel="stylesheet" type="text/css">
+<link href="../css/pygments.css" rel="stylesheet" type="text/css">
+<link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
+<!-- you don't need to keep this, but it's cool for stats! --><meta name="generator" content="nanoc 3.3.7">
+</head>
+<body>
+          <a href="https://github.com/snipit/developer.snip.it"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    <div id="main">
+      <h1 id="snips">Snips</h1>
+
+<h2 id="retrieving-the-snips-in-a-collection">Retrieving the snips in a collection</h2>
+
+<pre><code>[GET] /folders/:folder/snips
+</code></pre>
+
+<h3 id="response">Response</h3>
+
+<pre class="headers"><code>Status: 200 OK</code></pre>
+
+<pre class="highlight"><code class="language-javascript"><span class="p">{</span>
+  <span class="s2">"snips"</span><span class="o">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="s2">"folder_id"</span><span class="o">:</span> <span class="mi">15738</span><span class="p">,</span>
+      <span class="s2">"comments_count"</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+      <span class="s2">"id"</span><span class="o">:</span> <span class="mi">123416</span><span class="p">,</span>
+      <span class="s2">"created_at"</span><span class="o">:</span> <span class="s2">"2012-04-06T22:24:20Z"</span><span class="p">,</span>
+      <span class="s2">"url"</span><span class="o">:</span> <span class="s2">"http://www.nbcbayarea.com/news/local/Text-Driven-Coffee-Machine-Gives-New-Meaning-to-Instant-Coffee-146440315.html"</span><span class="p">,</span>
+      <span class="s2">"title"</span><span class="o">:</span> <span class="s2">"Text-Driven Coffee Machine Gives New Meaning to 'Instant Coffee'"</span><span class="p">,</span>
+      <span class="s2">"source"</span><span class="o">:</span> <span class="s2">"nbcbayarea"</span><span class="p">,</span>
+      <span class="s2">"image"</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">"url"</span><span class="o">:</span> <span class="s2">"//d2fkwnqkeasf43.cloudfront.net/77221e94ee907c9e447f248cce4b87964116b1403bc19a8a5e7b0d84af8c31d3-500x319.jpg"</span><span class="p">,</span>
+        <span class="s2">"width"</span><span class="o">:</span> <span class="mi">500</span><span class="p">,</span>
+        <span class="s2">"height"</span><span class="o">:</span> <span class="mi">319</span>
+      <span class="p">},</span>
+      <span class="s2">"comments"</span><span class="o">:</span> <span class="p">[</span>
+
+      <span class="p">],</span>
+      <span class="s2">"description"</span><span class="o">:</span> <span class="s2">"The coffee break is an inalienable right for every office worker. The problem is, between meetings and endless emails, it can be pretty hard to squeeze one in. Thanks to a new invention called the \"Textspresso\" we can shave off a few valuable minutes by texting our order to the coffee machine and simply do a drive by the break room to pick it up when ready."</span><span class="p">,</span>
+      <span class="s2">"caption"</span><span class="o">:</span> <span class="s2">"I wouldn't mind a \"textpresso\" machine hanging around the office ;)"</span><span class="p">,</span>
+      <span class="s2">"type"</span><span class="o">:</span> <span class="s2">"url"</span><span class="p">,</span>
+      <span class="s2">"updated_at"</span><span class="o">:</span> <span class="s2">"2012-06-30T01:42:50Z"</span><span class="p">,</span>
+      <span class="s2">"user_id"</span><span class="o">:</span> <span class="mi">2870</span><span class="p">,</span>
+      <span class="s2">"favorites_count"</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+      <span class="s2">"domain"</span><span class="o">:</span> <span class="s2">"www.nbcbayarea.com"</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="s2">"folder_id"</span><span class="o">:</span> <span class="mi">15738</span><span class="p">,</span>
+      <span class="s2">"comments_count"</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+      <span class="s2">"id"</span><span class="o">:</span> <span class="mi">112742</span><span class="p">,</span>
+      <span class="s2">"created_at"</span><span class="o">:</span> <span class="s2">"2012-03-22T06:05:31Z"</span><span class="p">,</span>
+      <span class="s2">"url"</span><span class="o">:</span> <span class="s2">"http://mattrogish.com/blog/2012/03/17/open-plan-offices-must-die/"</span><span class="p">,</span>
+      <span class="s2">"title"</span><span class="o">:</span> <span class="s2">"Open plan offices must die!"</span><span class="p">,</span>
+      <span class="s2">"source"</span><span class="o">:</span> <span class="s2">"mattrogish"</span><span class="p">,</span>
+      <span class="s2">"image"</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">"url"</span><span class="o">:</span> <span class="s2">"//d2fkwnqkeasf43.cloudfront.net/0be13949be8bcb4b08399da3054a989cbab843308e805f6bb22a7ac6b32742c4-501x300.jpg"</span><span class="p">,</span>
+        <span class="s2">"width"</span><span class="o">:</span> <span class="mi">501</span><span class="p">,</span>
+        <span class="s2">"height"</span><span class="o">:</span> <span class="mi">300</span>
+      <span class="p">},</span>
+      <span class="s2">"comments"</span><span class="o">:</span> <span class="p">[</span>
+
+      <span class="p">],</span>
+      <span class="s2">"description"</span><span class="o">:</span> <span class="s2">"\"There are a million ways to lose a work day, but not even a single way to get one back.\" \"How does a large software project get to be one year late? Answer: One day at a time!\" It's trendy right now to produce office space that looks like an Apple store."</span><span class="p">,</span>
+      <span class="s2">"caption"</span><span class="o">:</span> <span class="s2">"Engineering teams are more than the code they write. This article doesn't surprise me as much as the number of people that support it."</span><span class="p">,</span>
+      <span class="s2">"type"</span><span class="o">:</span> <span class="s2">"url"</span><span class="p">,</span>
+      <span class="s2">"updated_at"</span><span class="o">:</span> <span class="s2">"2012-06-30T01:42:50Z"</span><span class="p">,</span>
+      <span class="s2">"user_id"</span><span class="o">:</span> <span class="mi">2870</span><span class="p">,</span>
+      <span class="s2">"favorites_count"</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+      <span class="s2">"domain"</span><span class="o">:</span> <span class="s2">"mattrogish.com"</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span></code></pre>
+
+<h2 id="retrieving-a-snip">Retrieving a snip</h2>
+
+<pre><code>[GET] /snips/:snip
+</code></pre>
+
+<h3 id="response-1">Response</h3>
+
+<pre class="headers"><code>Status: 200 OK</code></pre>
+
+<pre class="highlight"><code class="language-javascript"><span class="p">{</span>
+  <span class="s2">"folder_id"</span><span class="o">:</span> <span class="mi">15738</span><span class="p">,</span>
+  <span class="s2">"comments_count"</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="s2">"id"</span><span class="o">:</span> <span class="mi">123416</span><span class="p">,</span>
+  <span class="s2">"created_at"</span><span class="o">:</span> <span class="s2">"2012-04-06T22:24:20Z"</span><span class="p">,</span>
+  <span class="s2">"user"</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">"small_image_url"</span><span class="o">:</span> <span class="s2">"//avatars-snip-it.s3.amazonaws.com/69/a276c4f4b5cf86a2462b70df56f5e3/jouhan-mustache.jpg"</span><span class="p">,</span>
+    <span class="s2">"id"</span><span class="o">:</span> <span class="mi">2870</span><span class="p">,</span>
+    <span class="s2">"name"</span><span class="o">:</span> <span class="s2">"Jouhan Allende"</span><span class="p">,</span>
+    <span class="s2">"updated_at"</span><span class="o">:</span> <span class="s2">"2012-09-11T22:01:17Z"</span>
+  <span class="p">},</span>
+  <span class="s2">"url"</span><span class="o">:</span> <span class="s2">"http://www.nbcbayarea.com/news/local/Text-Driven-Coffee-Machine-Gives-New-Meaning-to-Instant-Coffee-146440315.html"</span><span class="p">,</span>
+  <span class="s2">"title"</span><span class="o">:</span> <span class="s2">"Text-Driven Coffee Machine Gives New Meaning to 'Instant Coffee'"</span><span class="p">,</span>
+  <span class="s2">"source"</span><span class="o">:</span> <span class="s2">"nbcbayarea"</span><span class="p">,</span>
+  <span class="s2">"folder_title"</span><span class="o">:</span> <span class="s2">"Workspace"</span><span class="p">,</span>
+  <span class="s2">"image"</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">"url"</span><span class="o">:</span> <span class="s2">"//d2fkwnqkeasf43.cloudfront.net/77221e94ee907c9e447f248cce4b87964116b1403bc19a8a5e7b0d84af8c31d3-500x319.jpg"</span><span class="p">,</span>
+    <span class="s2">"width"</span><span class="o">:</span> <span class="mi">500</span><span class="p">,</span>
+    <span class="s2">"height"</span><span class="o">:</span> <span class="mi">319</span>
+  <span class="p">},</span>
+  <span class="s2">"comments"</span><span class="o">:</span> <span class="p">[</span>
+
+  <span class="p">],</span>
+  <span class="s2">"description"</span><span class="o">:</span> <span class="s2">"The coffee break is an inalienable right for every office worker. The problem is, between meetings and endless emails, it can be pretty hard to squeeze one in. Thanks to a new invention called the \"Textspresso\" we can shave off a few valuable minutes by texting our order to the coffee machine and simply do a drive by the break room to pick it up when ready."</span><span class="p">,</span>
+  <span class="s2">"caption"</span><span class="o">:</span> <span class="s2">"I wouldn't mind a \"textpresso\" machine hanging around the office ;)"</span><span class="p">,</span>
+  <span class="s2">"type"</span><span class="o">:</span> <span class="s2">"url"</span><span class="p">,</span>
+  <span class="s2">"updated_at"</span><span class="o">:</span> <span class="s2">"2012-06-30T01:42:50Z"</span><span class="p">,</span>
+  <span class="s2">"user_id"</span><span class="o">:</span> <span class="mi">2870</span><span class="p">,</span>
+  <span class="s2">"favorites_count"</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="s2">"domain"</span><span class="o">:</span> <span class="s2">"www.nbcbayarea.com"</span>
+<span class="p">}</span></code></pre>
+    </div>
+    <div id="sidebar">
+      <a class="logo" href="../">
+        <img src="../images/logo.png" width="94" height="111"></a>
+      <h2>Documentation</h2>
+      <ul>
+<li><a href="../">Overview</a></li>
+        <li><a href="./">Snips</a></li>
+        <li><a href="../users/">Users</a></li>
+        <li><a href="../folders/">Folders</a></li>
+        <li><a href="../favorites/">Favorites</a></li>
+        <li><a href="../comments/">Comments</a></li>
+      </ul>
+<div id="footer">
+        <div id="legal">
+          <p>&copy; <span id="year">year</span> Snipbook Inc.<br>All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      (function() {
+        // Keep copyright date current
+        var currentYear = (new Date).getFullYear();
+        document.getElementById('year').textContent = currentYear;
+      })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Snip.It API - Users</title>
+<link href="../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../css/documentation.css" rel="stylesheet" type="text/css">
+<link href="../css/pygments.css" rel="stylesheet" type="text/css">
+<link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
+<!-- you don't need to keep this, but it's cool for stats! --><meta name="generator" content="nanoc 3.3.7">
+</head>
+<body>
+          <a href="https://github.com/snipit/developer.snip.it"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    <div id="main">
+      <h1 id="users-api">Users API</h1>
+
+<h2 id="get-a-single-user">Get a single user</h2>
+
+<pre><code>[GET] /users/:user
+</code></pre>
+
+<h3 id="response">Response</h3>
+
+<pre class="headers"><code>Status: 200 OK</code></pre>
+
+<pre class="highlight"><code class="language-javascript"><span class="p">{</span>
+  <span class="s2">"public_folders_count"</span><span class="o">:</span> <span class="mi">27</span><span class="p">,</span>
+  <span class="s2">"views_count"</span><span class="o">:</span> <span class="mi">8087</span><span class="p">,</span>
+  <span class="s2">"username"</span><span class="o">:</span> <span class="s2">"jouhan"</span><span class="p">,</span>
+  <span class="s2">"small_image_url"</span><span class="o">:</span> <span class="s2">"//avatars-snip-it.s3.amazonaws.com/69/a276c4f4b5cf86a2462b70df56f5e3/jouhan-mustache.jpg"</span><span class="p">,</span>
+  <span class="s2">"img_url"</span><span class="o">:</span> <span class="s2">"//avatars-snip-it.s3.amazonaws.com/69/a276c4f4b5cf86a2462b70df56f5e3/jouhan-mustache.jpg"</span><span class="p">,</span>
+  <span class="s2">"id"</span><span class="o">:</span> <span class="mi">2870</span><span class="p">,</span>
+  <span class="s2">"created_at"</span><span class="o">:</span> <span class="s2">"2011-11-02T04:16:31Z"</span><span class="p">,</span>
+  <span class="s2">"subscribers_count"</span><span class="o">:</span> <span class="mi">1372</span><span class="p">,</span>
+  <span class="s2">"recent_folders"</span><span class="o">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="s2">"small_image_url"</span><span class="o">:</span> <span class="s2">"//d2fkwnqkeasf43.cloudfront.net/b232252c2d4a127f3212e88491dcf4085ec93a32-75x50.jpg"</span><span class="p">,</span>
+      <span class="s2">"id"</span><span class="o">:</span> <span class="mi">16008</span><span class="p">,</span>
+      <span class="s2">"title"</span><span class="o">:</span> <span class="s2">"Simple Health"</span><span class="p">,</span>
+      <span class="s2">"image_url"</span><span class="o">:</span> <span class="s2">"//d2fkwnqkeasf43.cloudfront.net/b232252c2d4a127f3212e88491dcf4085ec93a32-500x331.jpg"</span><span class="p">,</span>
+      <span class="s2">"color"</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+      <span class="s2">"subscriptions_count"</span><span class="o">:</span> <span class="mi">36</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="s2">"small_image_url"</span><span class="o">:</span> <span class="s2">"//d2fkwnqkeasf43.cloudfront.net/760759ab2556dbcf084d415187199aa3d353736b-84x50.jpg"</span><span class="p">,</span>
+      <span class="s2">"id"</span><span class="o">:</span> <span class="mi">15965</span><span class="p">,</span>
+      <span class="s2">"title"</span><span class="o">:</span> <span class="s2">"Celebrity Gossip"</span><span class="p">,</span>
+      <span class="s2">"image_url"</span><span class="o">:</span> <span class="s2">"//d2fkwnqkeasf43.cloudfront.net/760759ab2556dbcf084d415187199aa3d353736b-430x257.jpg"</span><span class="p">,</span>
+      <span class="s2">"color"</span><span class="o">:</span> <span class="s2">"pink"</span><span class="p">,</span>
+      <span class="s2">"subscriptions_count"</span><span class="o">:</span> <span class="mi">127</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="s2">"small_image_url"</span><span class="o">:</span> <span class="s2">"//d2fkwnqkeasf43.cloudfront.net/873331645fe1c801775c0cc2d01b79099090ef072d163dac11170f0cbf8aaa92-250x208.gif"</span><span class="p">,</span>
+      <span class="s2">"id"</span><span class="o">:</span> <span class="mi">13278</span><span class="p">,</span>
+      <span class="s2">"title"</span><span class="o">:</span> <span class="s2">"Funny"</span><span class="p">,</span>
+      <span class="s2">"image_url"</span><span class="o">:</span> <span class="s2">"//d2fkwnqkeasf43.cloudfront.net/873331645fe1c801775c0cc2d01b79099090ef072d163dac11170f0cbf8aaa92-250x208.gif"</span><span class="p">,</span>
+      <span class="s2">"color"</span><span class="o">:</span> <span class="s2">"blue"</span><span class="p">,</span>
+      <span class="s2">"subscriptions_count"</span><span class="o">:</span> <span class="mi">302</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="s2">"small_image_url"</span><span class="o">:</span> <span class="s2">"//d2fkwnqkeasf43.cloudfront.net/32a797ea3a567aad3b346f80a48c8dbf9c2dbb6a-50x50.jpg"</span><span class="p">,</span>
+      <span class="s2">"id"</span><span class="o">:</span> <span class="mi">14807</span><span class="p">,</span>
+      <span class="s2">"title"</span><span class="o">:</span> <span class="s2">"Fashion"</span><span class="p">,</span>
+      <span class="s2">"image_url"</span><span class="o">:</span> <span class="s2">"//d2fkwnqkeasf43.cloudfront.net/32a797ea3a567aad3b346f80a48c8dbf9c2dbb6a-500x504.jpg"</span><span class="p">,</span>
+      <span class="s2">"color"</span><span class="o">:</span> <span class="s2">"lemon"</span><span class="p">,</span>
+      <span class="s2">"subscriptions_count"</span><span class="o">:</span> <span class="mi">183</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="s2">"small_image_url"</span><span class="o">:</span> <span class="s2">"//d2fkwnqkeasf43.cloudfront.net/c22272a49af4fcd80847aa8d18de191c1897907f0275337fb02375cb6fe77060-250x250.jpg"</span><span class="p">,</span>
+      <span class="s2">"id"</span><span class="o">:</span> <span class="mi">19281</span><span class="p">,</span>
+      <span class="s2">"title"</span><span class="o">:</span> <span class="s2">"Muni Love"</span><span class="p">,</span>
+      <span class="s2">"image_url"</span><span class="o">:</span> <span class="s2">"//d2fkwnqkeasf43.cloudfront.net/1a0ac5aeefd3d024c31d43ad8ad2a68c5fd3c99a-500x327.jpg"</span><span class="p">,</span>
+      <span class="s2">"color"</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+      <span class="s2">"subscriptions_count"</span><span class="o">:</span> <span class="mi">1</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="s2">"name"</span><span class="o">:</span> <span class="s2">"Jouhan Allende"</span><span class="p">,</span>
+  <span class="s2">"subscriptions_count"</span><span class="o">:</span> <span class="mi">151</span><span class="p">,</span>
+  <span class="s2">"description"</span><span class="o">:</span> <span class="s2">"Cheddar bunny monster."</span><span class="p">,</span>
+  <span class="s2">"comments_received_count"</span><span class="o">:</span> <span class="mi">105</span><span class="p">,</span>
+  <span class="s2">"timeline_snoozed"</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="s2">"friends_count"</span><span class="o">:</span> <span class="mi">564</span><span class="p">,</span>
+  <span class="s2">"share_on_timeline"</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="s2">"default_language"</span><span class="o">:</span> <span class="s2">"english"</span><span class="p">,</span>
+  <span class="s2">"posts_count"</span><span class="o">:</span> <span class="mi">321</span><span class="p">,</span>
+  <span class="s2">"favorites_count"</span><span class="o">:</span> <span class="mi">221</span>
+<span class="p">}</span></code></pre>
+    </div>
+    <div id="sidebar">
+      <a class="logo" href="../">
+        <img src="../images/logo.png" width="94" height="111"></a>
+      <h2>Documentation</h2>
+      <ul>
+<li><a href="../">Overview</a></li>
+        <li><a href="../snips/">Snips</a></li>
+        <li><a href="./">Users</a></li>
+        <li><a href="../folders/">Folders</a></li>
+        <li><a href="../favorites/">Favorites</a></li>
+        <li><a href="../comments/">Comments</a></li>
+      </ul>
+<div id="footer">
+        <div id="legal">
+          <p>&copy; <span id="year">year</span> Snipbook Inc.<br>All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      (function() {
+        // Keep copyright date current
+        var currentYear = (new Date).getFullYear();
+        document.getElementById('year').textContent = currentYear;
+      })();
+    </script>
+</body>
+</html>
