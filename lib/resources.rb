@@ -181,6 +181,106 @@ module GitHub
     ]
   }
 
+  FOLDERS =
+  {
+    "folders" => [
+      {
+        "created_at"          => "2011-07-29T01:31:54Z",
+        "description"         => "",
+        "group"               => {
+          "category_id"          => 8,
+          "contributors_count"   => 157,
+          "display_order"        => 120,
+          "featured_folder_id"   => nil,
+          "header_img_url"       => nil,
+          "id"                   => 186,
+          "posts_count"          => 1306,
+          "public_folders_count" => 166,
+          "title"                => "Recipes"
+        },
+        "group_id"            => 186,
+        "id"                  => 417,
+        "image"               => {
+          "height" => 300,
+          "url"    => "//d2fkwnqkeasf43.cloudfront.net/6b888211d54f7011c467d3de4e0f18fed91de78cc22aa107f8466aa8161863cb-580x300.jpg",
+          "width"  => 580
+        },
+        "last_snipped_at"     => "2012-09-28T22:53:07Z",
+        "layout"              => nil,
+        "posts_count"         => 43,
+        "private"             => false,
+        "subscriptions_count" => 154,
+        "title"               => "Tastiness",
+        "updated_at"          => "2012-09-28T22:53:07Z",
+        "user_id"             => 185,
+        "user_subscribing"    => false
+      },
+      {
+        "created_at"          => "2012-09-27T23:06:02Z",
+        "description"         => nil,
+        "group"               => {
+          "category_id"          => nil,
+          "contributors_count"   => 3,
+          "display_order"        => 100,
+          "featured_folder_id"   => nil,
+          "header_img_url"       => nil,
+          "id"                   => 12701,
+          "posts_count"          => 0,
+          "public_folders_count" => 3,
+          "title"                => "US Foreign Policy"
+        },
+        "group_id"            => 12701,
+        "id"                  => 30109,
+        "image"               => {
+          "height" => 347,
+          "url"    => "//d2fkwnqkeasf43.cloudfront.net/da46757c911eebeeee9eae79350f6ff1f7a930b0-500x347.jpg",
+          "width"  => 500
+        },
+        "last_snipped_at"     => "2012-09-28T22:41:52Z",
+        "layout"              => nil,
+        "posts_count"         => 3,
+        "private"             => false,
+        "subscriptions_count" => 0,
+        "title"               => "Iran 2012",
+        "updated_at"          => "2012-09-28T22:41:53Z",
+        "user_id"             => 185,
+        "user_subscribing"    => false
+      },
+      {
+        "created_at"          => "2011-10-03T22:59:02Z",
+        "description"         => "",
+        "group"               => {
+          "category_id"          => 10,
+          "contributors_count"   => 165,
+          "display_order"        => 130,
+          "featured_folder_id"   => nil,
+          "header_img_url"       => nil,
+          "id"                   => 197,
+          "posts_count"          => 564,
+          "public_folders_count" => 207,
+          "title"                => "Brain Candy"
+        },
+        "group_id"            => 197,
+        "id"                  => 1591,
+        "image"               => {
+          "height" => 457,
+          "url"    => "//d2fkwnqkeasf43.cloudfront.net/9392a6864056f219574a826a0d22e732e419df3d-220x457.png",
+          "width"  => 220
+        },
+        "last_snipped_at"     => "2012-09-28T21:39:06Z",
+        "layout"              => nil,
+        "posts_count"         => 20,
+        "private"             => false,
+        "subscriptions_count" => 16,
+        "title"               => "Podcasts I listen to",
+        "updated_at"          => "2012-09-28T21:39:06Z",
+        "user_id"             => 185,
+        "user_subscribing"    => false
+      },
+    ]
+  }
+
+
   FOLDER = 
   {
     "folder" => {
@@ -358,7 +458,6 @@ module GitHub
       "listorder"            => nil,
       "posts_count"          => 0,
       "private"              => false,
-      "slug"                 => "caffeinenation",
       "subscriptions_count"  => 0,
       "title"                => "Caffeine-Nation",
       "updated_at"           => "2012-09-11T00:57:55Z",

@@ -15,7 +15,7 @@ This retrieves the collections for a user
 ### Response
 
 <%= headers 200 %>
-
+<%= json :folders %>
 
 ## Retrieving a specific folder
 
