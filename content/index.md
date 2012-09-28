@@ -24,7 +24,9 @@ documents the `snips` endpoint relative to the base URL.
 
 Requests to APIs are made using `GET` for most endpoints, since most endpoints are read-only, and follow a straightforward REST style. 
 
-The current **documented and supported** API only supports read-only endpoints. We're working on documenting and exposing the update and delete documentation.
+<div class="alert" markdown="1">
+The current **documented and supported** API only supports read-only endpoints. We're working on documenting and exposing the create, update and delete documentation.
+</div>
 
 Parameters are prefixed with `:` to indicate an argument to the request.
 
