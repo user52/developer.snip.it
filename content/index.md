@@ -4,7 +4,9 @@ title: Snip.It API
 
 # The Snip.It API
 
-The Snip.It API offers up the resources that make up the Snip.It service.
+The Snip.It API offers up the resources that make up the [Snip.It service](http://snip.it). 
+
+This API documentation is a [GitHub repository](https://github.com/snipit/developer.snip.it). Please help improve the documentation by forking it and adding to it.
 
 Each API endpoint is documented relative to a base URL that is versioned.
 
@@ -12,13 +14,11 @@ Each API endpoint is documented relative to a base URL that is versioned.
 
 The current API version is **v2**. 
 
-We strive to make the API fast, consistent and bug-free. If you find otherwise, please send us a support message and we'll do our best to fix it as fast as we can. 
-
 The endpoints are documented *relative* to this base URL. For example:
 
 	snips/:snip
 
-documents the `snips` endpoint relative to the base URL
+documents the `snips` endpoint relative to the base URL.
 
 ## Requests
 
@@ -31,7 +31,6 @@ Parameters are prefixed with `:` to indicate an argument to the request.
 	[GET] snips/:snip
 
 documents the `snip` endpoint with a required **id** to pass in to retrieve the details for a given snip. 
-
 
 
 ## Response

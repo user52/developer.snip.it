@@ -4,7 +4,7 @@ title: Snips
 
 # Snips
 
-## Retrieving the snips in a folder
+## Retrieving the snips in a collection
 
 	[GET] /folders/:folder/snips
 

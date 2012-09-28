@@ -22,8 +22,9 @@ p {
 
 h1 {
   font-size: 20px;
-  padding: .8em 0 0;
-  margin: 2em 0 0;
+  padding: .5em 0;
+  margin: 2em 0 1em;
+  border-bottom: 1px solid #cccccc;
 }
 
 h1:first-child {
