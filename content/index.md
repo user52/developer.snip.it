@@ -42,6 +42,14 @@ The repsonse to a request is always in *JSON* format and is documented with the 
 
 A response may (and usually does) include more data than documented, the documentation indicates the **supported subset** of the attributes.
 
+<div class="alert" markdown="1">
+Note that URLs embeded in response values are one of two kinds:
+
+1. Absolute URLs – These are usually URLs to actual content. These URLs can be used unchanged to access the resource in question. 
+
+2. Schema-less URLs – There are mainly URLs to Snip.It managed assets. These need to be prefixed with the schema for Snip.It, which is currently `http:`
+</div>
+
 Error responses are indicated in a similar way. We don't document errors for each endpoint unless they are specific to that endpoint but they are all structured like the following example
 
 <%= headers 404 %>
