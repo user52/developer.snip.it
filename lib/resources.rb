@@ -70,10 +70,17 @@ module GitHub
       end
     end
 
+  ERROR_SAMPLE = 
+  {
+    "exception" => {
+      "errors"  => nil,
+      "message" => "Resource not found - \357\274\210\357\274\217_\357\274\274\357\274\211",
+      "status"  => 404
+    }
+  }
+
   USER = 
   {
-    "admin"                   => true,
-    "beta"                    => true,
     "comments_received_count" => 105,
     "created_at"              => "2011-11-02T04:16:31Z",
     "default_language"        => "english",
@@ -93,7 +100,6 @@ module GitHub
         "small_image_url"     => "//d2fkwnqkeasf43.cloudfront.net/b232252c2d4a127f3212e88491dcf4085ec93a32-75x50.jpg",
         "subscriptions_count" => 36,
         "title"               => "Simple Health",
-        "url_slug"            => "16008-Simple-Health"
       },
       {
         "color"               => "pink",
@@ -102,7 +108,6 @@ module GitHub
         "small_image_url"     => "//d2fkwnqkeasf43.cloudfront.net/760759ab2556dbcf084d415187199aa3d353736b-84x50.jpg",
         "subscriptions_count" => 127,
         "title"               => "Celebrity Gossip",
-        "url_slug"            => "15965-Celebrity-Gossip"
       },
       {
         "color"               => "blue",
@@ -111,7 +116,6 @@ module GitHub
         "small_image_url"     => "//d2fkwnqkeasf43.cloudfront.net/873331645fe1c801775c0cc2d01b79099090ef072d163dac11170f0cbf8aaa92-250x208.gif",
         "subscriptions_count" => 302,
         "title"               => "Funny",
-        "url_slug"            => "13278-Funny"
       },
       {
         "color"               => "lemon",
@@ -120,7 +124,6 @@ module GitHub
         "small_image_url"     => "//d2fkwnqkeasf43.cloudfront.net/32a797ea3a567aad3b346f80a48c8dbf9c2dbb6a-50x50.jpg",
         "subscriptions_count" => 183,
         "title"               => "Fashion",
-        "url_slug"            => "14807-Fashion"
       },
       {
         "color"               => nil,
@@ -129,7 +132,6 @@ module GitHub
         "small_image_url"     => "//d2fkwnqkeasf43.cloudfront.net/c22272a49af4fcd80847aa8d18de191c1897907f0275337fb02375cb6fe77060-250x250.jpg",
         "subscriptions_count" => 1,
         "title"               => "Muni Love",
-        "url_slug"            => "19281-Muni-Love"
       }
     ],
     "share_on_timeline"       => true,
@@ -137,7 +139,6 @@ module GitHub
     "subscribers_count"       => 1372,
     "subscriptions_count"     => 151,
     "timeline_snoozed"        => false,
-    "url_slug"                => "jouhan",
     "username"                => "jouhan",
     "views_count"             => 8087
   }
@@ -168,17 +169,14 @@ module GitHub
       {
         "id"       => 16289,
         "title"    => "Alcohol Science",
-        "url_slug" => "16289-Alcohol-Science"
       },
       {
         "id"       => 15971,
         "title"    => "Upcycled Crafts",
-        "url_slug" => "15971-Upcycled-Crafts"
       },
       {
         "id"       => 15738,
         "title"    => "Workspace",
-        "url_slug" => "15738-Workspace"
       }
     ]
   }
@@ -205,7 +203,6 @@ module GitHub
       "subscriptions_count" => 1,
       "title"               => "Workspace",
       "updated_at"          => "2012-06-05T20:55:56Z",
-      "url_slug"            => "15738-Workspace",
       "user"                => {
         "admin"                   => true,
         "beta"                    => true,
@@ -225,7 +222,6 @@ module GitHub
         "subscribers_count"       => 1388,
         "subscriptions_count"     => 152,
         "timeline_snoozed"        => false,
-        "url_slug"                => "jouhan",
         "username"                => "jouhan",
         "views_count"             => 8216
       },
@@ -248,7 +244,6 @@ module GitHub
         "small_image_url" => "//avatars-snip-it.s3.amazonaws.com/7f/b473c8c0dece96c8402244cfd172bb/avatar_sq.jpg",
         "subscribed_at"   => "2012-09-07T04:06:24Z",
         "updated_at"      => "2012-09-10T20:31:02Z",
-        "url_slug"        => "cedric"
       }
     ]
   }
@@ -257,13 +252,11 @@ module GitHub
   {
     "snips" => [
       {
-        "alpha_post_id"   => nil,
         "caption"         => "I wouldn't mind a \"textpresso\" machine hanging around the office ;)",
         "comments"        => [],
         "comments_count"  => 0,
         "created_at"      => "2012-04-06T22:24:20Z",
         "description"     => "The coffee break is an inalienable right for every office worker. The problem is, between meetings and endless emails, it can be pretty hard to squeeze one in. Thanks to a new invention called the \"Textspresso\" we can shave off a few valuable minutes by texting our order to the coffee machine and simply do a drive by the break room to pick it up when ready.",
-        "display_type"    => "fattie",
         "domain"          => "www.nbcbayarea.com",
         "favorites_count" => 0,
         "folder_id"       => 15738,
@@ -281,13 +274,11 @@ module GitHub
         "user_id"         => 2870
       },
       {
-        "alpha_post_id"   => nil,
         "caption"         => "Engineering teams are more than the code they write. This article doesn't surprise me as much as the number of people that support it.",
         "comments"        => [],
         "comments_count"  => 0,
         "created_at"      => "2012-03-22T06:05:31Z",
         "description"     => "\"There are a million ways to lose a work day, but not even a single way to get one back.\" \"How does a large software project get to be one year late? Answer: One day at a time!\" It's trendy right now to produce office space that looks like an Apple store.",
-        "display_type"    => "fattie",
         "domain"          => "mattrogish.com",
         "favorites_count" => 0,
         "folder_id"       => 15738,
@@ -314,19 +305,15 @@ module GitHub
 
   POST = 
   {
-    "alpha_post_id"   => nil,
     "caption"         => "I wouldn't mind a \"textpresso\" machine hanging around the office ;)",
     "comments"        => [],
     "comments_count"  => 0,
     "created_at"      => "2012-04-06T22:24:20Z",
     "description"     => "The coffee break is an inalienable right for every office worker. The problem is, between meetings and endless emails, it can be pretty hard to squeeze one in. Thanks to a new invention called the \"Textspresso\" we can shave off a few valuable minutes by texting our order to the coffee machine and simply do a drive by the break room to pick it up when ready.",
-    "display_type"    => "highrise",
     "domain"          => "www.nbcbayarea.com",
     "favorites_count" => 0,
     "folder_id"       => 15738,
-    "folder_slug"     => "workspace",
     "folder_title"    => "Workspace",
-    "folder_url_slug" => "15738-Workspace",
     "id"              => 123416,
     "image"           => {
       "height" => 319,
@@ -343,7 +330,6 @@ module GitHub
       "name"            => "Jouhan Allende",
       "small_image_url" => "//avatars-snip-it.s3.amazonaws.com/69/a276c4f4b5cf86a2462b70df56f5e3/jouhan-mustache.jpg",
       "updated_at"      => "2012-09-11T22:01:17Z",
-      "url_slug"        => "jouhan"
     },
     "user_id"         => 2870
   }
@@ -380,7 +366,6 @@ module GitHub
       "views"                => 0
     },
     "post"   => {
-      "alpha_snip_id"          => nil,
       "cached_image_at"        => nil,
       "cached_image_error"     => nil,
       "cached_image_uri"       => nil,
@@ -425,13 +410,11 @@ module GitHub
 
   POST_UPDATE = 
   {
-    "alpha_post_id"   => nil,
     "caption"         => "I wouldn't mind a \"textpresso\" machine hanging around the office ;)",
     "comments"        => [],
     "comments_count"  => 0,
     "created_at"      => "2012-09-11T00:57:55Z",
     "description"     => nil,
-    "display_type"    => "fattie",
     "domain"          => "www.nbcbayarea.com",
     "favorites_count" => 0,
     "folder_id"       => 28933,
@@ -449,6 +432,59 @@ module GitHub
     "user_id"         => 17798
   }
 
+  FAVORITES =
+  {
+    "snips" => [
+      {
+        "caption"         => "",
+        "comments"        => [
+          {
+            "created_at" => "2012-09-05T23:33:32Z",
+            "editable"   => false,
+            "id"         => 6913,
+            "message"    => "Great scene. ",
+            "user"       => {
+              "id"              => 4879,
+              "name"            => "Jan Angevine",
+              "small_image_url" => "https://graph.facebook.com/1244973614/picture?type=square",
+              "updated_at"      => "2012-09-28T01:38:17Z",
+            },
+            "vote_score" => 0,
+            "votes"      => []
+          }
+        ],
+        "comments_count"  => 1,
+        "created_at"      => "2012-09-05T22:47:01Z",
+        "description"     => "This might be the single greatest \"oblivious Romney\" moment of the entire campaign. Enjoy. ",
+        "domain"          => "www.upworthy.com",
+        "favorites_count" => 1,
+        "folder_id"       => 19003,
+        "folder_title"    => "Criticism and Uncategorizable America",
+        "groups"          => [
+          {
+            "id"    => 57,
+            "title" => "Social Issues"
+          }
+        ],
+        "id"              => 278808,
+        "image"           => nil,
+        "source"          => "upworthy",
+        "title"           => "Mitt Romney Accidentally Confronts A Gay Veteran; Awesomeness Ensues",
+        "type"            => "url",
+        "updated_at"      => "2012-09-07T17:10:38Z",
+        "url"             => "http://www.upworthy.com/mitt-romney-accidentally-confronts-a-gay-veteran-awesomeness-ensues?c=bl3",
+        "user"            => {
+          "id"              => 8076,
+          "name"            => "Henry Shepherd",
+          "small_image_url" => "//avatars-snip-it.s3.amazonaws.com/6f/df433bea1f3768f037dc2e746208ce/Henry05e.jpg",
+          "updated_at"      => "2012-09-28T00:23:03Z",
+        },
+        "user_id"         => 8076
+      }
+    ]
+  }
+
+
   POST_FAVORITE = 
   {
     "favorited" => true
@@ -462,19 +498,15 @@ module GitHub
   POST_RESNIP = 
   {
     "post" => {
-      "alpha_post_id"   => 286166,
       "caption"         => "I wouldn't mind a \"textpresso\" machine hanging around the office ;)",
       "comments"        => [],
       "comments_count"  => 0,
       "created_at"      => "2012-09-11T01:22:10Z",
       "description"     => nil,
-      "display_type"    => "fattie",
       "domain"          => "www.nbcbayarea.com",
       "favorites_count" => 0,
       "folder_id"       => 28933,
-      "folder_slug"     => "caffeinenation",
       "folder_title"    => "Caffeine-Nation",
-      "folder_url_slug" => "28933-Caffeine-Nation",
       "id"              => 286186,
       "image"           => {
         "height" => 319,
@@ -491,7 +523,6 @@ module GitHub
         "name"            => "Marc Nijdam",
         "small_image_url" => "https://graph.facebook.com/731214555/picture?type=square",
         "updated_at"      => "2012-09-11T00:57:55Z",
-        "url_slug"        => "men"
       },
       "user_id"         => 17798
     }
@@ -514,7 +545,6 @@ module GitHub
           "name"            => "Alaina",
           "small_image_url" => "//avatars-snip-it.s3.amazonaws.com/user/48/Alaina_Photo_small.jpg",
           "updated_at"      => "2012-09-10T21:42:19Z",
-          "url_slug"        => "alaina"
         }
       },
       {
@@ -526,7 +556,6 @@ module GitHub
           "name"            => "Maria Marem ",
           "small_image_url" => "//avatars-snip-it.s3.amazonaws.com/user/4882/Magician_by_ArhcamtIlnaad.jpg",
           "updated_at"      => "2012-09-10T21:19:34Z",
-          "url_slug"        => "MariaMarem-4882"
         }
       }
     ]

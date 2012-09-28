@@ -13,6 +13,10 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
+
+compile 'static/CNAME' do
+end
+
 compile '/static/*' do
   filter :relativize_paths, :type => :css
 end
@@ -26,6 +30,9 @@ compile '*' do
   filter :relativize_paths, :type => :html
 end
 
+route '/static/CNAME' do
+	'/CNAME'
+end
 
 route '/static/css/*' do
   item.identifier[7..-2] + '.css'

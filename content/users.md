@@ -22,4 +22,3 @@ title: Users
 
 <%= headers 200 %>
 <%= json :user_me %>
-
