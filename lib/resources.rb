@@ -636,31 +636,79 @@ module GitHub
   {
     "comments" => [
       {
-        "created_at" => "2012-09-07T04:48:48Z",
-        "id"         => 6973,
-        "message"    => "epic",
+        "created_at" => "2012-11-06T17:57:39Z",
+        "editable"   => false,
+        "id"         => 9308,
+        "message"    => "Led by those corrupt within London 'City'  ",
         "user"       => {
-          "id"              => 48,
-          "name"            => "Alaina",
-          "small_image_url" => "//avatars-snip-it.s3.amazonaws.com/user/48/Alaina_Photo_small.jpg",
-          "updated_at"      => "2012-09-10T21:42:19Z",
-        }
+          "id"              => 11419,
+          "name"            => "SunjayJK",
+          "small_image_url" => "//avatars-snip-it.s3.amazonaws.com/user/11419/SunjayJK.jpg",
+          "updated_at"      => "2012-11-12T05:53:42Z",
+          "url_slug"        => "SunjayJK-11419"
+        },
+        "vote_score" => 0,
+        "votes"      => []
       },
       {
-        "created_at" => "2012-09-07T07:31:36Z",
-        "id"         => 6991,
-        "message"    => "Wow!",
+        "created_at" => "2012-11-06T19:04:14Z",
+        "editable"   => false,
+        "id"         => 9311,
+        "message"    => "Sunjay, that is definitely a problem.",
         "user"       => {
-          "id"              => 4882,
-          "name"            => "Maria Marem ",
-          "small_image_url" => "//avatars-snip-it.s3.amazonaws.com/user/4882/Magician_by_ArhcamtIlnaad.jpg",
-          "updated_at"      => "2012-09-10T21:19:34Z",
-        }
+          "id"              => 4879,
+          "name"            => "Jan Angevine",
+          "small_image_url" => "https://graph.facebook.com/1244973614/picture?type=square",
+          "updated_at"      => "2012-11-12T04:47:51Z",
+          "url_slug"        => "JanAngevine-4879"
+        },
+        "vote_score" => 0,
+        "votes"      => []
+      },
+      {
+        "created_at" => "2012-11-06T19:26:09Z",
+        "editable"   => false,
+        "id"         => 9313,
+        "message"    => "I support permits for packing vegetable peelers in public, and superfluous u's can be quite charming.",
+        "user"       => {
+          "id"              => 292,
+          "name"            => "Sarah Caplener",
+          "small_image_url" => "https://graph.facebook.com/698263627/picture?type=square",
+          "updated_at"      => "2012-11-11T20:28:56Z",
+          "url_slug"        => "sarah"
+        },
+        "vote_score" => 0,
+        "votes"      => []
+      },
+      {
+        "created_at" => "2012-11-06T20:33:52Z",
+        "editable"   => false,
+        "id"         => 9317,
+        "message"    => "Keep Calm and Carry Humour.",
+        "user"       => {
+          "id"              => 4879,
+          "name"            => "Jan Angevine",
+          "small_image_url" => "https://graph.facebook.com/1244973614/picture?type=square",
+          "updated_at"      => "2012-11-12T04:47:51Z",
+          "url_slug"        => "JanAngevine-4879"
+        },
+        "vote_score" => 1,
+        "votes"      => [
+          {
+            "comment_id" => 9317,
+            "id"         => 301,
+            "user"       => {
+              "id"              => 292,
+              "name"            => "Sarah Caplener",
+              "small_image_url" => "https://graph.facebook.com/698263627/picture?type=square",
+              "updated_at"      => "2012-11-11T20:28:56Z",
+              "url_slug"        => "sarah"
+            }
+          }
+        ]
       }
     ]
   }
-
-
 
   end
 end
